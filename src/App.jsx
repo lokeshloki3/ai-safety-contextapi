@@ -11,9 +11,7 @@ const App = () => {
       </h1>
       <FilterTasks />
       <TaskForm />
-      <div className="mt-6">
-        <TaskList />
-      </div>
+      <TaskList />
     </div>
   );
 };

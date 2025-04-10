@@ -7,10 +7,12 @@ const TaskList = () => {
     const { filteredTasks, toggleDescription } = useTaskContext();
 
     return (
-        <div>
-            {filteredTasks.map((task) => (
-                <TaskCard key={task.id} task={task} toggleDescription={toggleDescription} />
-            ))}
+        <div className='mt-6'>
+            {
+                filteredTasks.map((task) => (
+                    <TaskCard key={task.id} task={task} toggleDescription={toggleDescription} />
+                ))
+            }
         </div>
     );
 };
